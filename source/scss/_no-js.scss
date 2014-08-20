@@ -1,0 +1,84 @@
+@mixin catHeader{
+	font-size: 1.2em;
+	font-weight: bold;
+	background: #ededed;
+	width: 100%;
+	padding-left: 8px;
+	margin-bottom: 8px;
+}
+
+#newsspec_5380.noJs{
+
+	width:100%;
+	position: static;
+
+	.intro-caption{
+		display: none;
+	}
+	.cats__info-panels{
+		display:block;
+
+		.cats__info-panels__panel{
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
+		}
+
+		.cats__intro{
+			font-size: 1.6em;
+			width: 100%;
+			font-weight: bold;
+			margin-bottom: 12px;
+		}
+		.cats__ginger{
+			@include catHeader;
+			border-left: solid 6px #006633;
+		}
+		.cats__chip{
+			@include catHeader;
+			border-left: solid 6px #663366;
+		}
+		.cats__sooty{
+			@include catHeader;
+			border-left: solid 6px #993399;
+		}
+		.cats__orlando{
+			@include catHeader;
+			border-left: solid 6px #336699;
+		}
+		.cats__hermie{
+			@include catHeader;
+			border-left: solid 6px #ff3333;
+		}
+		.cats__phoebe{
+			@include catHeader;
+			border-left: solid 6px #cc3366;
+		}
+		.cats__deebee{
+			@include catHeader;
+			border-left: solid 6px #cc6600;
+		}
+		.cats__kato{
+			@include catHeader;
+			border-left: solid 6px #33ccff;
+		}
+		.cats__coco{
+			@include catHeader;
+			border-left: solid 6px #ffcc33;
+		}	
+		.cats__rosie{
+			@include catHeader;
+			border-left: solid 6px #ffff33;
+		}							
+		p {
+			font-size: 1.1em;
+			margin-bottom: 12px;
+		}
+
+		.nojs-map{
+			display: none;
+		}
+
+	}
+
+}

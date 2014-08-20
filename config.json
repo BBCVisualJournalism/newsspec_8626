@@ -1,0 +1,20 @@
+{
+  "debug":          "false",
+  "whichEnv":       "local",
+  "project_number": "8626",
+  "year":           "2014",
+  "imageWidths":    ["320", "480", "624"],
+  "desktopAssets": [
+    "module/desktop/cats-processed_mod",
+    "module/desktop/svg-cats",
+    "lib/raphael-min"
+  ],
+  "vocabs": {
+    "googleSpreadsheetId": "--REPLACEME--",
+    "worksheet":           "Sheet1"
+  },
+  "services": {
+    "default": "english",
+    "others":  "false"
+  }
+}

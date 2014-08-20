@@ -1,0 +1,12 @@
+@import "news_special/defaults";
+@import "base";
+@import "mixins";
+@import "topnav";
+@import "panel";
+@import "no-js";
+@import "video";
+
+.main img {
+	width: 100%;
+    height: auto;
+}

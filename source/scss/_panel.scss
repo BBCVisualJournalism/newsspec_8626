@@ -1,0 +1,201 @@
+/* Panel */
+#newsspec_5380 {
+   
+    #cats__extended-panel-1{
+        display: none;
+    }
+    .cats__panel {
+        min-height: 631px;
+        float: left;
+        width: 35%;
+        position:relative;
+        @include panel();
+        @include panelNavigation(119px);
+        @include introCaption;
+    }
+    .cats__panel__extended {
+        @include extended-panel(rgba(0,0,0,0.8), -450px, 5%, 664px, 457px);
+    }
+	&.ns__desktop {
+
+		.cats__panel {
+        	background-color: $panelbackground;
+            position: relative;
+            top: -88px;
+            z-index: 2;
+            .cats__image-cta-holder .ext-content__txt {
+                display: block;
+                color: #fff;
+                position: absolute;
+                font-size: 1em;
+                padding: 6px 8px;
+                bottom: 22px;
+                left: 12px;
+                font-weight: normal;
+                background-color: rgba(0,0,0,0.8);
+            }
+		}
+        .cats__panel--1 .share {
+            display: none;
+        }
+
+        .cats__content-wrapper {
+            height: 576px;
+            position: relative;
+        }
+
+        .toAll {
+            position: absolute;
+            bottom: 12px;
+        }
+
+	}
+    &.ns__desktop.ns__desktop__lite {
+        .cats__panel{
+            top: 0;
+        }
+    }
+    &.ns__mobile {
+        .cats__title-header {
+            padding-top: 11px;
+        }
+  
+        .to-hide {
+            display: none;
+        }
+        .intro-caption {
+            margin-top: 8px;
+            font-size: 24px;
+        }
+        .cats__panel {
+            min-width: 270px;
+            min-height: 270px;
+            width: 40%;
+            position: static;
+
+            .cats__image-cta-holder img {
+                height: 91px;
+                width: 148px;
+                float: left;
+            }
+            .ext-content__txt {
+               color: #505050;
+                display: block;
+                float: left;
+                font-size: 1em;
+                font-weight: normal;
+                padding: 0 0 0 6px;
+                width: 120px;
+            }
+            .toAll {
+                clear: both;
+            }
+
+            .cats__panel__extended {
+            @include extended-panel(rgba(0,0,0,0.8), 50px, 5%, 664px, 457px);
+   
+            .cats__extended-link {
+                width: 640px;
+                height: 360px;
+                display: block;
+                margin: 12px;
+                clear: both;
+                position: relative;
+                top:-372px;
+                background: url($imgpath + '/play_small.png') no-repeat 0 0;
+            }
+        }
+        }
+        @include respondMinMax(false, 768px) {
+
+            .cats__panel {
+               width: 100%;
+               min-height: 200px;
+               padding: 0;
+               .cats__nav-wrapper {
+                    display: none;
+               }
+               .cats__text-panel {
+                    padding: 0 0 16px;
+                    margin-right: 48px
+               }
+               .cats__image-cta-holder {
+                display: none;
+               }
+               .cats__extended-panel__header {
+                    display: none;
+               }
+            .cats__panel__extended {
+                @include extended-panel(rgb(255,255,255), 0, 12px, auto, auto);
+                position: static;
+                margin-left: auto;
+                margin-right: auto;
+                .cats__extended-panel__med {
+                    width: 90%;
+                    height: auto;
+                }
+
+                .cats__image {
+                    height: 91px;
+                    width: 148px;
+                    float: left;
+                }
+
+                .cats__extended-link {
+                    width: 90%;
+                    height: auto;
+                    display: block;
+                    margin: 12px;
+                    clear: both;
+                    position: relative;
+                    top: -103px;
+                    background: url(url($imgpath + '/play_small.png')) no-repeat scroll -1px -1px transparent;
+
+                }
+                .cats__extended-panel__header {
+                    color: #505050;
+  
+                }
+                .cats__extended-panel__button {
+                    display: none;
+                }
+
+                .cats__text-panel__text{
+                    color: #505050;
+                }
+
+            }
+
+
+            }
+            .toAll {
+                display: block;
+                position: absolute;
+                right: 55px;
+                bottom: 28px;
+            }
+            .cats__text-panel {
+                .cats__text-panel__text {
+
+                    &.to-hide {
+                        display: block;
+                    }
+                }
+            }
+            
+        }
+
+        @include respondMinMax(false, 495px) {
+            .cats__panel {
+               width: 100%;
+               min-height: 200px;
+               height: auto;
+
+                .cats__text-panel {
+                    margin-right: 0
+               }
+           }
+
+        }
+    }
+}
