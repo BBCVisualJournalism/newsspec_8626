@@ -20,18 +20,17 @@ define(['lib/news_special/bootstrap', 'lib/news_special/share_tools/controller',
             // fix for mobile - want share tools to appear BELOW content
             news.$('.ns__mobile .share').appendTo(news.$('.ns__mobile'));
 
-            news.pubsub.on('moveToPosition', updateShare);
-            news.pubsub.on('topnavItemClicked', updateShare);
-
             function updateShare(position) {
                 if (view === 'desktop') {
                     var cat = journey['point_' + position].header,
                         shareMessage = 'What DO cats get up to? I followed ' + cat + ' to find out. How about you?';
 
                     news.pubsub.emit('ns:share:message', [shareMessage]);
-                    news.$('.ns__desktop .share .share__button p').html("Share " + cat + "'s journey");
+                    news.$('.ns__desktop .share .share__button p').html('Share ' + cat + '\'s journey');
                 }
             }
+            news.pubsub.on('moveToPosition', updateShare);
+            news.pubsub.on('topnavItemClicked', updateShare);
 
             news.sendMessageToremoveLoadingImage();
         }
