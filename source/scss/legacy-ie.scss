@@ -1,64 +1,25 @@
 $fix-mqs: 1024px;
 @import "main";
 
-/* ie-fixes.scss */
-
-.ie7,
-.ie8 {
-
-    #ns__loader
-    {
-        .mask{
-            display:none;
-        }
-        .nomask{
-            display:none;
-        }
-        .ieFB{
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-    }
 /* IE 8 and below fixes here excluding IE6*/
-    #newsspec_5380 {
-        /*#cats__viewer__clickable .clickable_1,
-        #cats__viewer__clickable .clickable_2,
-        #cats__viewer__clickable .clickable_3,
-        #cats__viewer__clickable .clickable_4,
-        #cats__viewer__clickable .clickable_5,
-        #cats__viewer__clickable .clickable_6,
-        #cats__viewer__clickable .clickable_7,
-        #cats__viewer__clickable .clickable_8,
-        #cats__viewer__clickable .clickable_9,
-        #cats__viewer__clickable .clickable_10,*/
-        .cats__panel .cats__image-cta-holder .ext-content__txt {
-            background: transparent;
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000);
-        }
-    }
-
-    #newsspec_5380.ns__desktop .cats__panel__extended {
+#newsspec_5380 {
+    /*#cats__viewer__clickable .clickable_1,
+    #cats__viewer__clickable .clickable_2,
+    #cats__viewer__clickable .clickable_3,
+    #cats__viewer__clickable .clickable_4,
+    #cats__viewer__clickable .clickable_5,
+    #cats__viewer__clickable .clickable_6,
+    #cats__viewer__clickable .clickable_7,
+    #cats__viewer__clickable .clickable_8,
+    #cats__viewer__clickable .clickable_9,
+    #cats__viewer__clickable .clickable_10,*/
+    .cats__panel .cats__image-cta-holder .ext-content__txt {
         background: transparent;
         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000);
     }
-
 }
 
-
-.ie {
-
-    #ns__loader
-    {
-        .mask{
-            display:none;
-        }
-        .nomask{
-            display:none;
-        }
-        .ieFB{
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-    }
-
+#newsspec_5380.ns__desktop .cats__panel__extended {
+    background: transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000);
 }
