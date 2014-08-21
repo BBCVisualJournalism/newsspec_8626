@@ -89,6 +89,12 @@
             }
             .toAll {
                 clear: both;
+                position: relative;
+                top: auto;
+                left: auto;
+                right: auto;
+                bottom: auto;
+                padding: 0 0 13px 30px;
             }
 
             .cats__panel__extended {

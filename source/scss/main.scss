@@ -19,4 +19,17 @@
         visibility: hidden;
         height: 0;
     }
+
+    .share__button {
+        width: 220px;
+        max-width: none;
+        
+        p {
+            color: #D2700F;
+            font-size: 14px;
+            font-family: Arial;
+            font-weight: bold;
+            margin-left: 4px;
+        }
+    }
 }
