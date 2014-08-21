@@ -96,6 +96,7 @@
 		color: #505050;
 		margin-bottom: 1px;
 		margin-top: 0;
+		line-height: 16px;
 	}
 
 	.cats__title-count {
@@ -194,8 +195,8 @@
     }
 
 	.cats__image-cta-holder {
-		position: relative;
-		bottom: 0;
+		position: absolute;
+		bottom: 80px;
 		padding: 0 10px;
 		cursor: pointer;
 		padding-bottom: 16px;

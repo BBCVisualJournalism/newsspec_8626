@@ -10,3 +10,13 @@
 	width: 100%;
     height: auto;
 }
+
+.ns__desktop .share {
+    position: absolute;
+    bottom: 35px;
+
+    .share__overlay p {
+        visibility: hidden;
+        height: 0;
+    }
+}

@@ -5,7 +5,7 @@
         display: none;
     }
     .cats__panel {
-        min-height: 631px;
+        min-height: 629px;
         float: left;
         width: 35%;
         position:relative;
@@ -21,7 +21,7 @@
 		.cats__panel {
         	background-color: $panelbackground;
             position: relative;
-            top: -88px;
+            top: -86px;
             z-index: 2;
             .cats__image-cta-holder .ext-content__txt {
                 display: block;
@@ -40,13 +40,13 @@
         }
 
         .cats__content-wrapper {
-            height: 576px;
             position: relative;
+            height: 560px;
         }
 
         .toAll {
             position: absolute;
-            bottom: 12px;
+            bottom: 6px;
         }
 
 	}
